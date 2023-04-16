@@ -10,6 +10,8 @@ body{
     max-width: 1920px;
 }
 
+
+
 .container{
     margin: 0 250px;
 }
@@ -466,20 +468,27 @@ margin:0 150px;
 
 .price__nav a{
     color: #000;
+    display: inline-block;
+
     padding: 8px 30px;
     border: 1px solid rgba(128, 128, 128, 0.238);
     
-    transition: background 0.3s ease, color 0.3s ease;
-
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+
+    
+
+    transition: background 0.3s ease, 
+    color 0.3s ease, transform .3s ease;
 }
 
 .price__nav a:hover{
+    transform: scale(105%);
+
     color: #fff;
     background: rgba(246, 69, 45, 1);
 }
@@ -502,6 +511,14 @@ margin:0 150px;
 
     position: relative;
     padding-bottom: 100px;
+
+
+    transition: transform 0.3s ease, background .3s ease;
+}
+
+.card:hover{
+    transform: translate(-1%, -1%);
+    background: #7d7d7d14;
 }
 
 .mg-left{
@@ -563,16 +580,21 @@ margin:0 150px;
     bottom: 50px;
     left: 0px;
     right: 0px;
+
 }
+
+
 
 
 .card__button a{
     padding: 16px 32px;
 
     display: inline-block;
-
-    background: rgba(246, 69, 45, 1);
-
+ 
+    color: #000;
+    background:linear-gradient(90deg, rgba(246, 69, 45, 1) 0, rgba(246, 69, 45, 1) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+    border: 1px solid black;
+    
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -580,11 +602,17 @@ margin:0 150px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     
-    transition: background 0.3s ease;
+    background-size: 200%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .card__button a:hover{
-    background: rgba(0, 0, 0, 0.771);
+    color: #fff;
+    background-position-x: 0;
+    transform: scale(105%);
 }
 
 
