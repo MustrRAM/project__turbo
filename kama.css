@@ -1,0 +1,62 @@
+
+
+/* Интернетный вариант с псевдоэлементом */
+.header__button {
+    margin: 300px 500px;
+}
+
+.header__button a{
+	border: none;
+	background: #000000;
+	color: #f2f2f2;
+	padding: 70px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.header__button a::before{
+    content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	transition: all 1s ease;
+}
+
+.header__button a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Мой вариант с градиентом */
+.header__button a{
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+
+    padding: 26px 60px;
+    border: 2px solid;
+   background: linear-gradient(90deg, rgba(124, 124, 124, 0.6) 0, rgba(124, 124, 124, 0.6) 50%, rgba(0, 0, 255, 0) 50%, rgba(0, 0, 254, 0) 100%);
+   background-size: 200%;
+   background-position-x: 100%;
+   background-repeat: no-repeat;
+   transition: background .3s ease-out;
+}
+
+.header__button a:hover{
+    background-position-x: 0;
+}
