@@ -60,3 +60,27 @@
 .header__button a:hover{
     background-position-x: 0;
 }
+
+
+
+
+
+
+.top__block{
+    margin-top: 120px;
+ 
+}
+
+.flex__block{
+    margin-top: 64px;
+    display: flex;
+  justify-content: center;
+}
+
+.popular__card{
+  width:18.5%;
+}
+
+.popular__card img{
+  border-radius:30px;
+}
